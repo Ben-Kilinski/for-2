@@ -14,12 +14,21 @@
         }
 
         //task11
-        var number = +prompt("insert a number");
-        for (var counter = 0; counter < 10; counter++) {
-        if (number > 10) {console.log("yes")}
-        else if (number == 10) {console.log("equal")}
-        else {console.log("no")}
+        var count = 0;
+        while (count <10){
+            var number = +prompt("insert a number");
+            if (number > 10){console.log("yes")}
+            else if (number < 10){
+                console.log("no");
+                alert("wrong number");
+                count++;
+            }
+            else {console.log("equal")}
         }
+        
+    
+        
+        
     </script>
 </body>
 </html>
